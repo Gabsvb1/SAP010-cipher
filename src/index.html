@@ -12,14 +12,13 @@
     <h1>Mensagens secretas para o seu diário</h1>
     <hr>
   </div>
-  <script src="index.js" type="module"></script>
   <h2>Aqui você pode usar um dos métodos de criptografia de texto. Assim, o seu diário ficará secreto!</h2>
   <h3>Vamos começar?</h3>
   <div id="conteudo">
     <img src="kisspng-diary-clip-art-vector-diary-and-pen-5aa9871137cc64.6085934715210596012286.png"
       alt="imagem de diario">
     <div id="formulario">
-      <select>
+      <select id="select-code-descode">
         <option value="codificar">Codificar</option>
         <option value="descodificar">Descodificar</option>
       </select>
@@ -28,25 +27,26 @@
       <input id="seletor-deslocamento" placeholder="0" type="number" min="0" />
       <div id="codificar">
         <p>Mensagem:</p>
-        <textarea placeholder="digite sua mensagem" rows="7" cols="52"></textarea>
-        <p>Resultado:</p>
+        <textarea id="encode-input" placeholder="digite sua mensagem" rows="7" cols="52"></textarea>
+        <p>Resultado: codificar</p>
         <div class="resultado-container">
-          <span></span>
+          <span id="result-encode"></span>
 
         </div>
       </div>
-      <div id="descodificar">
+      <div id="descodificar" class="hiden">
         <p>Descodificar</p>
-        <textarea rows="7" cols="52"></textarea>
-        <p>Resultado:</p>
+        <textarea id="descode-input" rows="7" cols="52"></textarea>
+        <p>Resultado:descodificar</p>
         <div class="resultado-container">
-          <span></span>
+          <span id="result-descode"></span>
 
         </div>
       </div>
     </div>
   </div>
   <p>Feito por Gabriella Vieira Bruno.</p>
+  <script src="index.js" type="module"></script>
 </body>
 
 </html>

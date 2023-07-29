@@ -28,14 +28,14 @@ const cipher = {
         resultado.push(upperString[index]);
       } else {
         resultado.push(
-          String.fromCharCode((charcode + 65 - offset) % 26 + 65)
+          String.fromCharCode(((charcode + 65 - offset) % 26) + 65)
         );
       }
     }
-
     return resultado.join("");
   },
   // ...
 };
+
 
 export default cipher;

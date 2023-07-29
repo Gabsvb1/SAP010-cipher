@@ -39,7 +39,9 @@ img{
     color: rgb(87, 85, 85);
  }
 
- #descodificar{
+
+
+ .hiden{
     display: none;
  }
 
